@@ -1,8 +1,7 @@
 import { Injectable } from '@nestjs/common';
+import { User } from './users/users.model';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
+  private users: User[] = [];
 }
